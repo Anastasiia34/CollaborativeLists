@@ -55,16 +55,8 @@ docker compose up --build
 1. Open the CollaborativeLists/ project in Xcode
 2. Build and run the app on a simulator or a real device
 3. On first launch, enter the backend URL in the app alert
-
-Use:
-
-http://localhost:8080
-
-for the iOS Simulator.
-
-Use your Mac's local network IP for a real iPhone:
-
-http://<your-mac-local-ip>:8080 (Example: http://192.168.1.10:8080)
+   - Use http://localhost:8080 for the iOS Simulator.
+   - Use your Mac's local network IP for a real iPhone: http://<your-mac-local-ip>:8080 (Example: http://192.168.1.10:8080)
 
 ## Backend Tests
 
