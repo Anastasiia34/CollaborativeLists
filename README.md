@@ -48,7 +48,9 @@ The project includes:
 From the CollaborativeListsBackend/ directory:
 
 ```bash
-docker compose up --build
+docker compose up -d db
+docker compose run --rm migrate
+docker compose up --build app
 ```
 
 ## Run iOS App
@@ -57,6 +59,7 @@ docker compose up --build
 3. On first launch, enter the backend URL in the app alert
    - Use http://localhost:8080 for the iOS Simulator.
    - Use your Mac's local network IP for a real iPhone: http://<your-mac-local-ip>:8080 (Example: http://192.168.1.10:8080)
+4. When prompted, tap **Allow** for local network access. Without this, the app will not be able to connect to the backend.
 
 ## Backend Tests
 
