@@ -43,7 +43,8 @@ The project includes:
 └── README.md
 ```
 
-## Run Backend
+## Run
+### Backend
 
 From the CollaborativeListsBackend/ directory:
 
@@ -53,7 +54,7 @@ docker compose run --rm migrate
 docker compose up --build app
 ```
 
-## Run iOS App
+### iOS
 1. Open the CollaborativeLists/ project in Xcode
 2. Build and run the app on a simulator or a real device
 3. On first launch, enter the backend URL in the app alert
@@ -61,8 +62,8 @@ docker compose up --build app
    - Use your Mac's local network IP for a real iPhone: http://<your-mac-local-ip>:8080 (Example: http://192.168.1.10:8080)
 4. When prompted, tap **Allow** for local network access. Without this, the app will not be able to connect to the backend.
 
-## Backend Tests
-
+## Tests
+### Backend
 From the CollaborativeListsBackend/ directory, run:
 
 ```bash
@@ -70,7 +71,5 @@ docker compose up -d test-db
 swift test
 ```
 
-## Notes
-- Backend is fully runnable via Docker Compose
-- iOS app requires manual backend URL input on first launch
-- No .env file is required; configuration is provided via Docker
+### iOS
+Open the project in Xcode and run tests with Cmd + U
